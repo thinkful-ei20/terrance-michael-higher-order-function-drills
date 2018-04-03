@@ -47,21 +47,46 @@
 
 // console.log(filteredNames);
 
-const hazardWarningCreator = function(typeOfWarning) {
-	let warningCounter = 0;
+// const hazardWarningCreator = function(typeOfWarning) {
+// 	let warningCounter = 0;
 
-	return function func(location) {
-		warningCounter++;
-		console.log(`Danger! There is a ${typeOfWarning} hazard at ${location}!`);
-		console.log(`The ${typeOfWarning} hazard alert has triggered ${warningCounter} time(s) today!`);
-	}
+// 	return function func(location) {
+// 		warningCounter++;
+// 		console.log(`Danger! There is a ${typeOfWarning} hazard at ${location}!`);
+// 		console.log(`The ${typeOfWarning} hazard alert has triggered ${warningCounter} time(s) today!`);
+// 	}
 
-}
+// }
 
-const rocksWarning = hazardWarningCreator('Rocks on the road');
-const windWarning = hazardWarningCreator('High winds on the road');
-const rainWarning = hazardWarningCreator('Exessive rain on the road');
+// const rocksWarning = hazardWarningCreator('Rocks on the road');
+// const windWarning = hazardWarningCreator('High winds on the road');
+// const rainWarning = hazardWarningCreator('Exessive rain on the road');
 
-rocksWarning('Main St and Pacific Ave');
-windWarning('Main St and Pacific Ave');
-rainWarning('Main St and Pacific Ave');
+// rocksWarning('Main St and Pacific Ave');
+// windWarning('Main St and Pacific Ave');
+// rainWarning('Main St and Pacific Ave');
+
+let newArray = [];
+let string = 'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest'
+
+// function reduceArray(array){
+// 	if (array.length === 3) {
+
+// 	}
+// 	else if (array.length !== 3) {
+
+// 	}
+// }
+
+
+// let newWords = words.reduce(function(acc, word) {
+//     if (word.length === 3) {
+//         acc += ' ';
+//         console.log(acc);
+//     } else {
+//         acc += word[word.length - 1].toUpperCase();
+//         console.log(acc);
+//     }
+//     return acc;
+// }, '');
+
