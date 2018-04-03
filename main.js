@@ -66,30 +66,54 @@
 // windWarning('Main St and Pacific Ave');
 // rainWarning('Main St and Pacific Ave');
 
-let turtleMovement = [
-	[0, 0],
-	[0, 5],
-	[-1, -3],
-	[-3, 1],
-	[2, -4],
-	[3, 2]
-];
+// let turtleMovement = [
+// 	[0, 0],
+// 	[0, 5],
+// 	[-1, -3],
+// 	[-3, 1],
+// 	[2, -4],
+// 	[3, 2]
+// ];
 
 
-function valid_movement(move) {
-	if (move[0] >= 0 && move[1] >= 0) {
-		return true;
-	} else {
-		return false;
-	}
-}
+// function valid_movement(move) {
+// 	if (move[0] >= 0 && move[1] >= 0) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
 
-function total_steps(move) {
-	return move[0] + move[1]; 
-}
+// function total_steps(move) {
+// 	return move[0] + move[1]; 
+// }
 
-function show_steps(steps) {
-	console.log(steps);
-}
+// function show_steps(steps) {
+// 	console.log(steps);
+// }
 
-turtleMovement.filter(valid_movement).map(total_steps).forEach(show_steps);
+// turtleMovement.filter(valid_movement).map(total_steps).forEach(show_steps);
+// let newArray = [];
+// let string = 'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest'
+
+// function reduceArray(array){
+// 	if (array.length === 3) {
+
+// 	}
+// 	else if (array.length !== 3) {
+
+// 	}
+// }
+
+
+// let newWords = words.reduce(function(acc, word) {
+//     if (word.length === 3) {
+//         acc += ' ';
+//         console.log(acc);
+//     } else {
+//         acc += word[word.length - 1].toUpperCase();
+//         console.log(acc);
+//     }
+//     return acc;
+// }, '');
+
