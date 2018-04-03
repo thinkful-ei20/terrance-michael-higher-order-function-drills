@@ -47,21 +47,49 @@
 
 // console.log(filteredNames);
 
-const hazardWarningCreator = function(typeOfWarning) {
-	let warningCounter = 0;
+// const hazardWarningCreator = function(typeOfWarning) {
+// 	let warningCounter = 0;
 
-	return function func(location) {
-		warningCounter++;
-		console.log(`Danger! There is a ${typeOfWarning} hazard at ${location}!`);
-		console.log(`The ${typeOfWarning} hazard alert has triggered ${warningCounter} time(s) today!`);
+// 	return function func(location) {
+// 		warningCounter++;
+// 		console.log(`Danger! There is a ${typeOfWarning} hazard at ${location}!`);
+// 		console.log(`The ${typeOfWarning} hazard alert has triggered ${warningCounter} time(s) today!`);
+// 	}
+
+// }
+
+// const rocksWarning = hazardWarningCreator('Rocks on the road');
+// const windWarning = hazardWarningCreator('High winds on the road');
+// const rainWarning = hazardWarningCreator('Exessive rain on the road');
+
+// rocksWarning('Main St and Pacific Ave');
+// windWarning('Main St and Pacific Ave');
+// rainWarning('Main St and Pacific Ave');
+
+let turtleMovement = [
+	[0, 0],
+	[0, 5],
+	[-1, -3],
+	[-3, 1],
+	[2, -4],
+	[3, 2]
+];
+
+
+function valid_movement(move) {
+	if (move[0] >= 0 && move[1] >= 0) {
+		return true;
+	} else {
+		return false;
 	}
-
 }
 
-const rocksWarning = hazardWarningCreator('Rocks on the road');
-const windWarning = hazardWarningCreator('High winds on the road');
-const rainWarning = hazardWarningCreator('Exessive rain on the road');
+function total_steps(move) {
+	return move[0] + move[1]; 
+}
 
-rocksWarning('Main St and Pacific Ave');
-windWarning('Main St and Pacific Ave');
-rainWarning('Main St and Pacific Ave');
+function show_steps(steps) {
+	console.log(steps);
+}
+
+turtleMovement.filter(valid_movement).map(total_steps).forEach(show_steps);
